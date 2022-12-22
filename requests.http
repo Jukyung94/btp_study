@@ -1,0 +1,37 @@
+### Create Order
+
+POST http://localhost:8080/odata/v4/BoardService/Board
+Content-Type: application/json
+
+ 
+    {
+      "article_ID": 2,
+      "title": "test",
+      "author": "test author",
+      "content": "nullaaaaa"
+    }
+
+### Read Book
+
+GET http://localhost:8080/odata/v4/BooksService/Books(abed2f7a-c50e-4bc5-89fd-9a00a54b4b16)
+Accept: application/json
+
+
+### Create another Order
+
+POST http://localhost:8080/odata/v4/OrdersService/Orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "book_ID": "fd0c5fda-8811-4e20-bcff-3a776abc290a",
+      "amount": 4
+    }
+  ]
+}
+
+### Delete Book
+
+DELETE http://localhost:8080/odata/v4/BoardService/Board(7bd9f9e8-6a86-473f-88d9-436f041c5b11)
+Accept: application/json
