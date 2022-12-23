@@ -12,3 +12,8 @@ entity Board: cuid {
     author: String(111);
     content: String(111);
 }
+
+entity ImageSource: cuid {
+    imgName: String(111);
+    imgSource: LargeBinary;
+}
